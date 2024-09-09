@@ -1,41 +1,44 @@
-# Compiled Lua sources
-luac.out
+syntax: glob
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+.DS_Store
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+*.bak
+*.orig
+*~
 
-# Precompiled Headers
-*.gch
-*.pch
+build
+bin
+obj
+release
+ipch
+src/scripts.c
+**.lnt
+**.vlstatus
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+Makefile
+*.make
+*.xcodeproj
+*.xcworkspace
+*.swp
+*.sdf
+*.sln
+*.suo
+*.ncb
+*.vcproj*
+*.vcxproj*
+*.VC.opendb
+*.VC.db
+*.opensdf
+*.workspace
+*.project
+*.tags
+*.sublime-*
+.cproject
+.settings
+.buildpath
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+*.bbprojectsettings
+Scratchpad.txt
+Unix Worksheet.worksheet
+project.bbprojectdata
+Premake4.tmproj
