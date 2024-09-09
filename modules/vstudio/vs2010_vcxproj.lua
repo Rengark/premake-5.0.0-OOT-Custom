@@ -115,7 +115,13 @@
 		local tools = string.format(' ToolsVersion="%s"', action.vstudio.toolsVersion)
 
 		local framework = prj.dotnetframework or action.vstudio.targetFramework or "4.0"
-		p.w('<TargetFrameworkVersion>v%s</TargetFrameworkVersion>', framework)
+		local minVer = prj.wintargetminplatform or '10.0.22621.0'
+		local projVer = prj.vcprojectversion or '17.0'
+		local managed = prj.managedpackagereferencesupport or 'true'
+		p.w('<TargetFramework>%s</TargetFramework>', framework)
+		p.w('<WindowsTargetPlatformMinVersion>%s</WindowsTargetPlatformMinVersion>', minVer)
+		p.w('<VCProjectVersion>%s</VCProjectVersion>', projVer)
+		p.w('<EnableManagedPackageReferenceSupport>%s</EnableManagedPackageReferenceSupport>', managed)
 	end
 
 

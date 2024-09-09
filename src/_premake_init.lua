@@ -618,6 +618,24 @@
 	}
 
 	api.register {
+		name = "wintargetminplatform",
+		scope = "config",
+		kind = "string",
+	}
+
+	api.register {
+		name = "vcprojectversion",
+		scope = "config",
+		kind = "string",
+	}
+
+	api.register {
+		name = "managedpackagereferencesupport",
+		scope = "config",
+		kind = "string",
+	}
+
+	api.register {
 		name = "enabledefaultcompileitems",
 		scope = "config",
 		kind = "boolean",
