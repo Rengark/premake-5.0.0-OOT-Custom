@@ -21,11 +21,10 @@ Makefile
 *.xcworkspace
 *.swp
 *.sdf
-*.sln
+
 *.suo
 *.ncb
-*.vcproj*
-*.vcxproj*
+
 *.VC.opendb
 *.VC.db
 *.opensdf
@@ -42,3 +41,5 @@ Scratchpad.txt
 Unix Worksheet.worksheet
 project.bbprojectdata
 Premake4.tmproj
+
+.vs/
